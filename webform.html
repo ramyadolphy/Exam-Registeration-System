@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Form Validation Using Java Script</title>
+<script type="text/javascript">
+function validation()
+{
+if(document.f1.Name.value=="")
+{
+window.alert("Plz enter your Name");
+return false;
+}
+else if(document.f1.E-mail.value=="")
+{
+window.alert("Plz Enter Your E-mail:");
+return false;
+}
+else if(document.f1.E-mail.value.indexof('@gmail.com')==-1)
+{
+window.alert("Plz Enter Your E-mail");
+return false;
+}
+else if(document.f1.Subject Name.value=="")
+{
+window.alert("Plz Enter Your Subject Name:");
+return false;
+}
+else if(document.f1.Regno.value==0)
+{
+window.alert("Plz Enter Your Regno:");
+return false;
+}
+else if(document.f1.DOB.value==0)
+{
+window.alert("Plz Enter Your DOB:");
+return false;
+}
+else if(document.f1.Father's Name.value=="")
+{
+window.alert("Plz Enter Your Father's Name:");
+return false;
+}
+else if(document.f1.Mother's Name.value=="")
+{
+window.alert("Plz Enter Your Mother's Name:");
+return false;
+}
+else if(document.f1.addr.value==")
+{
+window.alert("Plz Enter Your Address:");
+return false;
+}
+else if(document.f1.Mobile Number.value==0)
+{
+window.alert("Plz Enter Your Mobile Number:");
+return false;
+}
+else if(document.f1.Session.value==")
+{
+window.alert("Plz Enter Your Session:");
+return false;
+}
+else if(document.f1.Course ID.value==")
+{
+window.alert("Plz Enter Your Course ID:");
+return false;
+}
+else((document.f1.chk[0].checked=false)&&(document.f1.chk[1].checked==false)&&(document.f1.chk[2].checked==false))
+{
+window.alert("Plz Enter Your Course:");
+return false;
+else
+if((document.f1.rdo[0].checked=false)&&(document.f1.rdo[1].checked==false)&&(document.f1.rdo[2].checked==false))
+{
+window.alert("Plz Choose Your Gender");
+return false;
+}
+else
+return true;
+}
+</script>
+<style>
+ body
+{
+   background-image: url('water lilies.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+</style>
+
+</head>
+
+<h3 style="text-align:center">Exam Registeration System</h3>
+<form name="f1" action="Register.html" onsubmit="return validation()">
+<fieldset>
+<legend>Registeration Form</legend><br/>
+<table border="1">
+<tr><td>Name:</td><td><input type="text" name="Name" size="31"></td></tr>
+<tr><td>E-mail:</td><td><input type="text" name="E-mail" size="31"></td></tr>
+<tr><td>Subject Name:</td><td><input type="text" name="Subject Name" size="31"></td></tr>
+<tr><td>Regno:</td><td><input type="text"  name="Regno" size="31"></td></tr>
+<tr><td>Mobile Number:</td><td><input type="text" name="Mobile Number" size="31"></td></tr>
+<tr><td>Mother's Name:</td><td><input type="text" name="Mother's Name" size="31"></td></tr>
+<tr><td>Father's Name:</td><td><input type="text" name="Father's Name" size="31"></td></tr>
+<tr><td>DOB:</td><td><input type="text" name="DOB" size="31"></td></tr>
+<tr><td>Address:</td><td><Textarea name="addr"rows="5"cols="25"></Textarea></td></tr>
+<tr>
+<td>Session:</td>
+<td><Select name="Session">
+<option>---Select---</option>
+<option>FN</option>
+<option>AN</option>
+</Select>
+</td>
+</tr>
+<tr>
+<td>Course ID:</td>
+<td><Select name="Course ID">
+<option>---Select---</option>
+<option>19CEIT056</option>
+<option>19CEIT003</option>
+<option>19CEIT609</option>
+</Select>
+</td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" name="rdo">Male
+<input type="radio" name="rdo">Female
+<input type="radio" name="rdo">Transgender
+</td>
+</tr>
+<tr>
+<td>Course:</td><td>
+<input type="checkbox" name="chk">IT
+<input type="checkbox" name="chk">CSE
+<Input type="checkbox" name="chk">ECE 
+</td>
+</tr>
+</table><br/>
+<input type= "submit" value="Register"></fieldset></form></body></html>
+
+
